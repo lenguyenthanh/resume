@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cv</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  /* h1:hover { */
+  /*     background-color: #757575; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #9CB770;
+  }
+  /* h2:hover { */
+  /*     background-color: #397249; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      font-weight: bold;
+  }
+  dd {
+      margin-left: 17%;
+      margin-bottom:7px;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #397249;
+  }
+  a:hover, a:active {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+
+  table {
+      width: 100%;
+  }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="thanh-le">Thanh Le</h1>
+<hr />
+<blockquote>
+<p>Passionate, professional senior software engineer with strong
+architecture skills and the ability to learn quickly. Committed high
+quality, reusable, testable code and user experience that will stand the
+test of time. Love functional programming and open source.</p>
+</blockquote>
+<hr />
+<h2 id="experience">Experience</h2>
+<dl>
+<dt>6/2021 - Present</dt>
+<dd>
+<strong><a href="https://www.grokking.org/" target="_blank">Grokking
+Vietnam</a>:</strong>
+</dd>
+</dl>
+<p>Grokking Vietnam is a nonprofit organization dedicated to building
+and supporting a high-quality community of software engineers in
+Vietnam.</p>
+<ul>
+<li>Contributor for our <a href="http://newsletter.grokking.org/"
+target="_blank">newsletter</a></li>
+<li>Leading a team of five people on <a
+href="https://github.com/grokking-vietnam/grox" target="_blank">Grox
+project</a></li>
+<li>Program Director since 7/2022</li>
+</ul>
+<dl>
+<dt>4/2020 - Present</dt>
+<dd>
+<strong><a href="https://www.technocreatives.com/"
+target="_blank">Senior Software Developer - The Techno
+Creatives</a>:</strong>
+</dd>
+</dl>
+<ul>
+<li><p><a href="https://www.tyrilights.com/intellilight/"
+target="_blank">Tyri IntelliLight</a>: A project includes mobile apps
+and back-end for setting up, controlling and sharing Tyri products with
+Bluetooth mesh.</p>
+<ul>
+<li>Responsible for back-end using <a
+href="https://spring.io/projects/spring-boot"
+target="_blank">SpringBoot</a>, Kotlin, <a
+href="https://github.com/arrow-kt/arrow/" target="_blank">Arrow</a>, <a
+href="https://r2dbc.io/" target="_blank">r2dbc</a>, PostgreSQL, Redis,
+<a href="https://www.testcontainers.org/" target="_blank">Test
+Containers</a>.</li>
+<li>Update API and add <a
+href="https://en.wikipedia.org/wiki/Bluetooth_mesh_networking"
+target="_blank">Bluetooth Mesh</a> module to <a
+href="https://github.com/technocreatives/beckon-android"
+target="_blank">Beckon-Android</a> library.</li>
+<li>Use <a
+href="https://kotlinlang.org/docs/multiplatform-mobile-getting-started.html"
+target="_blank">Kotlin multiplatform mobile</a> and <a
+href="https://cashapp.github.io/sqldelight/"
+target="_blank">SqlDelight</a> to implement the Database layer for IOS
+and Android Apps.</li>
+</ul></li>
+<li><p><a href="https://rentr.se" target="_blank">rentr.se</a> - A
+trailers rental service.</p>
+<ul>
+<li>A part of a back-end team using Rust, Kotlin, GraphQL,
+RabbitMQ.</li>
+</ul></li>
+<li><p>Implement a POC of <a
+href="https://github.com/divvun/divvunspell" target="_blank">Divvun
+Spell Checking</a> plugin for <a href="https://omegat.org/"
+target="_blank">OmegaT app</a>.</p>
+<ul>
+<li>Rust, Java, Kotlin, <a
+href="https://github.com/java-native-access/jna"
+target="_blank">JNA</a></li>
+</ul></li>
+<li><p>A part of Android hiring team which includes: Screen candidate
+profiles, review assignments and technical interviews.</p></li>
+</ul>
+<dl>
+<dt>8/2018 - 4/2020</dt>
+<dd>
+<strong><a href="https://www.technocreatives.com/"
+target="_blank">Software Developer - The Techno Creatives</a>:</strong>
+</dd>
+</dl>
+<p>Starting as an Android developer, I was responsible for the
+architecture design for most Android projects. Introduced functional
+programming, MVI architecture and other design patterns to our team.
+During this period, I started to become a multi-discipline developer by
+working with different languages and products.</p>
+<ul>
+<li><p><a href="https://axkid.com/sv/product/axkid-connect/"
+target="_blank">Axkid Connect Android App</a></p>
+<ul>
+<li>Work with firmware team on debugging and protocol</li>
+<li>Responsible for App architecture and BLE integration.</li>
+</ul></li>
+<li><p><a href="https://github.com/technocreatives/beckon-android"
+target="_blank">Beckon-Android</a> - A BLE library for Android.</p>
+<ul>
+<li>Design and implement the library</li>
+<li>The library was designed to be used in <a
+href="https://axkid.com/sv/product/axkid-connect/" target="_blank">Axkid
+Connect Android App</a> and then other teams adopted it for other BLE
+related projects such as <a
+href="https://play.google.com/store/apps/details?id=com.weret.app"
+target="_blank">Weret Android App</a>.</li>
+</ul></li>
+<li><p><a href="https://github.com/divvun/gut" target="_blank">Gut</a> -
+A Git multi repo maintenance CLI tool.</p>
+<ul>
+<li>The app is being used widely in <a
+href="https://divvun.no/en/index.html" target="_blank">Divvun
+organization</a></li>
+</ul></li>
+<li><p><a href="https://www.24rental.se/" target="_blank">24rental</a> -
+an MVP of trailer rental service.</p>
+<ul>
+<li>Implement back-end using NodeJS, Typescript, PostgreSQL</li>
+</ul></li>
+</ul>
+<dl>
+<dt>6/2016 - 6/2018</dt>
+<dd>
+<strong><a
+href="https://web.archive.org/web/20170428110344/http://localift.net:80/about-us/"
+target="_blank">Senior Android Developer - Localift</a>(Remote
+Position)</strong>
+</dd>
+</dl>
+<p>Localift was an Australian startup which works with smart cities,
+companies and communities to deliver trusted shared mobility solutions,
+reducing congestion, economic costs and environmental impacts.</p>
+<ul>
+<li><p>The main responsible for the development Android App. App
+features include: ride tracking, ride scheduling, mapping integration
+(geocoding, place search, map interactions), friend lists, groups,
+messaging, push notifications, calendar integration, Facebook
+integration.</p></li>
+<li><p>After May 2017, including the responsibility for maintaining,
+deploying back-end (nodejs) and IOS app (Swift) after the CTO
+resigned.</p></li>
+</ul>
+<dl>
+<dt>11/2015 - 5/2016</dt>
+<dd>
+<strong>Android Developer - CommonWealth Bank Vietnam</strong>
+</dd>
+</dl>
+<ul>
+<li>Develop the first MVP version of a banking application for Android
+which is <a href="https://www.tyme.com/" target="_blank">TymeGlobal</a>
+now.</li>
+</ul>
+<dl>
+<dt>1/2015 - 11/2015</dt>
+<dd>
+<strong><a
+href="https://web.archive.org/web/20150801095851/http://evilgeniustechnologies.com/"
+target="_blank">Senior Android Developer - Evil Genius
+Technologies</a></strong>
+</dd>
+</dl>
+<ul>
+<li>Develop <a
+href="https://play.google.com/store/apps/details?id=com.followupboss.crm"
+target="_blank">http://www.followupboss.com</a> app on Android.</li>
+</ul>
+<dl>
+<dt>9/2013 - 12/2014</dt>
+<dd>
+<strong><a href="https://www.saritasa.vn/" target="_blank">Android
+Developer - Saritasa Vietnam</a></strong>
+</dd>
+</dl>
+<ul>
+<li>Various Android projects</li>
+</ul>
+<dl>
+<dt>5/2011 - 9/2013</dt>
+<dd>
+<strong>Freelancer Android Developer</strong>
+</dd>
+</dl>
+<ul>
+<li>Various Android projects</li>
+</ul>
+<dl>
+<dt>11/2009 - 5/2011</dt>
+<dd>
+<strong><a href="https://www.fpt-software.com/" target="_blank">Mobile
+Developer - FPT Software</a></strong>
+</dd>
+</dl>
+<ul>
+<li>Develop games and applications for different mobile platforms in C,
+C++, J2ME, Android, IOS.</li>
+</ul>
+<h2 id="side-projects-and-open-source">Side Projects and Open
+Source</h2>
+<dl>
+<dt>Side Projects</dt>
+<dd>
+<strong><a href="https://github.com/grokking-vietnam/grox"
+target="_blank">Grox</a>:</strong> Building an Interpreter in Scala 3 by
+using functional programming techniques(Following <a
+href="https://craftinginterpreters.com/" target="_blank">Crafting
+Interpreters book</a>)
+</dd>
+<dd>
+<p><strong><a href="https://github.com/lenguyenthanh/compilers"
+target="_blank">Compilers</a>:</strong> A place for me to
+learn/experiment with interpreters/compilers, type theory and functional
+programming.</p>
+</dd>
+<dd>
+<p><strong><a href="https://github.com/lenguyenthanh/RxArrow"
+target="_blank">RxArrow</a>:</strong> <a
+href="https://github.com/ReactiveX/rxjava" target="_blank">RxJava</a>
+extensions for <a href="https://github.com/arrow-kt/arrow/"
+target="_blank">Arrow</a>’s Data Types</p>
+</dd>
+<dd>
+<p><strong><a href="https://github.com/lenguyenthanh/schack"
+target="_blank">Schack</a>:</strong> Chess logic library in Scala 3.</p>
+</dd>
+<dt>Open Source</dt>
+<dd>
+<strong><a href="https://github.com/arrow-kt/arrow/"
+target="_blank">Arrow</a> - Functional library for Kotlin:</strong> I am
+a contributor and a member of the maintainer commitée.
+</dd>
+<dd>
+<p><strong><a href="https://github.com/lichess-org/scalachess"
+target="_blank">ScalaChess</a> - Chess API written in Scala. Immutable
+and free of side effects:</strong> I rewrote <a
+href="https://en.wikipedia.org/wiki/Portable_Game_Notation"
+target="_blank">PGN</a> parser part of the library by using a Parser
+Combinators library <a href="https://github.com/typelevel/cats-parse"
+target="_blank">cats-parse</a> which improved the speed of the parsing
+part by 300%.</p>
+</dd>
+<dd>
+<p><strong><a href="https://lichess.org/" target="_blank">Lichess</a> -
+The second largest internet chess server in the world:</strong> Some
+small bug fixes, mostly related to scalachess.</p>
+</dd>
+</dl>
+<h2 id="programming-languages">Programming Languages</h2>
+<p>As a multi-discipline developer, I am fairly proficient in several
+programming languages. In the last few years I have been using these
+programming languages in professional or personal context(in
+alphabetical order): Elm, Haskell, Java, Javascript, Kotlin, Lua,
+Python, Rust, Scala 2, Scala 3, Swift, Typescript.</p>
+<h2 id="human-languages">Human Languages</h2>
+<ul>
+<li>Vietnamese (native speaker)</li>
+<li>English (Fluent)</li>
+</ul>
+<h2 id="education">Education</h2>
+<dl>
+<dt>2007-2011</dt>
+<dd>
+<strong>Bachelor of Software Engineering</strong>; FPT University (Hanoi
+- Vietnam)
+</dd>
+</dl>
+<h2 id="academic-honors-and-awards">Academic Honors and Awards</h2>
+<ul>
+<li>2009 Regional ACM/ICPC Competition at Phuket/Thailand - Encourage
+Prize</li>
+<li>2009 Vietnam National ACM/ICPC Competition - Second Prize</li>
+<li>2008 Vietnam National Mathematics Olympiad for student - Third
+Prize</li>
+<li>2007 Full Scholarship at FPT University</li>
+<li>2006 Took part in the Vietnam National Mathematics Olympiad</li>
+</ul>
+<hr />
+<blockquote>
+<p><a href="mailto:lenguyenthanh@hotmail.com"
+class="email">lenguyenthanh@hotmail.com</a> • +46 73 145 4318 •<br />
+Gothenburg, Sweden</p>
+</blockquote>
+</body>
+</html>

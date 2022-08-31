@@ -1,0 +1,393 @@
+% Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+% Copyright 2014 Mark Szepieniec <http://github.com/mszep>
+% 
+% ConText style for making a resume with pandoc. Inspired by moderncv.
+% 
+% This CSS document is delivered to you under the CC BY-SA 3.0 License.
+% https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+\startmode[*mkii]
+  \enableregime[utf-8]  
+  \setupcolors[state=start]
+\stopmode
+
+\setupcolor[hex]
+\definecolor[titlegrey][h=757575]
+\definecolor[sectioncolor][h=397249]
+\definecolor[rulecolor][h=9cb770]
+
+% Enable hyperlinks
+\setupinteraction[state=start, color=sectioncolor]
+
+\setuppapersize [A4][A4]
+\setuplayout    [width=middle, height=middle,
+                 backspace=20mm, cutspace=0mm,
+                 topspace=10mm, bottomspace=20mm,
+                 header=0mm, footer=0mm]
+
+%\setuppagenumbering[location={footer,center}]
+
+\setupbodyfont[11pt, helvetica]
+
+\setupwhitespace[medium]
+
+\setupblackrules[width=31mm, color=rulecolor]
+
+\setuphead[chapter]      [style=\tfd]
+\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
+\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
+                          before={\leavevmode\blackrule\hspace}]
+\setuphead[subsubsection][style=\bf]
+
+\setuphead[chapter, section, subsection, subsubsection][number=no]
+
+%\setupdescriptions[width=10mm]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal,
+   location=hanging, width=18mm, distance=14mm, margin=0cm]
+
+\setupitemize[autointro, packed]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\defineitemgroup[enumerate]
+\setupenumerate[each][fit][itemalign=left,distance=.5em,style={\feature[+][default:tnum]}]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setuptables[textwidth=max, HL=none]
+\setupxtable[frame=off,option={stretch,width}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupdelimitedtext
+  [blockquote]
+  [before={\setupalign[middle]},
+   indentnext=no,
+  ]
+
+
+\starttext
+
+\startsectionlevel[title={Thanh Le},reference={thanh-le}]
+
+\thinrule
+
+\startblockquote
+Passionate, professional senior software engineer with strong
+architecture skills and the ability to learn quickly. Committed high
+quality, reusable, testable code and user experience that will stand the
+test of time. Love functional programming and open source.
+\stopblockquote
+
+\thinrule
+
+\startsectionlevel[title={Experience},reference={experience}]
+
+\startdescription{6/2021 - Present}
+  {\bf \goto{Grokking Vietnam}[url(https://www.grokking.org/)]:}
+\stopdescription
+
+Grokking Vietnam is a nonprofit organization dedicated to building and
+supporting a high-quality community of software engineers in Vietnam.
+
+\startitemize[packed]
+\item
+  Contributor for our
+  \goto{newsletter}[url(http://newsletter.grokking.org/)]
+\item
+  Leading a team of five people on \goto{Grox
+  project}[url(https://github.com/grokking-vietnam/grox)]
+\item
+  Program Director since 7/2022
+\stopitemize
+
+\startdescription{4/2020 - Present}
+  {\bf \goto{Senior Software Developer - The Techno
+  Creatives}[url(https://www.technocreatives.com/)]:}
+\stopdescription
+
+\startitemize
+\item
+  \goto{Tyri
+  IntelliLight}[url(https://www.tyrilights.com/intellilight/)]: A
+  project includes mobile apps and back-end for setting up, controlling
+  and sharing Tyri products with Bluetooth mesh.
+
+  \startitemize[packed]
+  \item
+    Responsible for back-end using
+    \goto{SpringBoot}[url(https://spring.io/projects/spring-boot)],
+    Kotlin, \goto{Arrow}[url(https://github.com/arrow-kt/arrow/)],
+    \goto{r2dbc}[url(https://r2dbc.io/)], PostgreSQL, Redis, \goto{Test
+    Containers}[url(https://www.testcontainers.org/)].
+  \item
+    Update API and add \goto{Bluetooth
+    Mesh}[url(https://en.wikipedia.org/wiki/Bluetooth_mesh_networking)]
+    module to
+    \goto{Beckon-Android}[url(https://github.com/technocreatives/beckon-android)]
+    library.
+  \item
+    Use \goto{Kotlin multiplatform
+    mobile}[url(https://kotlinlang.org/docs/multiplatform-mobile-getting-started.html)]
+    and \goto{SqlDelight}[url(https://cashapp.github.io/sqldelight/)] to
+    implement the Database layer for IOS and Android Apps.
+  \stopitemize
+\item
+  \goto{rentr.se}[url(https://rentr.se)] - A trailers rental service.
+
+  \startitemize[packed]
+  \item
+    A part of a back-end team using Rust, Kotlin, GraphQL, RabbitMQ.
+  \stopitemize
+\item
+  Implement a POC of \goto{Divvun Spell
+  Checking}[url(https://github.com/divvun/divvunspell)] plugin for
+  \goto{OmegaT app}[url(https://omegat.org/)].
+
+  \startitemize[packed]
+  \item
+    Rust, Java, Kotlin,
+    \goto{JNA}[url(https://github.com/java-native-access/jna)]
+  \stopitemize
+\item
+  A part of Android hiring team which includes: Screen candidate
+  profiles, review assignments and technical interviews.
+\stopitemize
+
+\startdescription{8/2018 - 4/2020}
+  {\bf \goto{Software Developer - The Techno
+  Creatives}[url(https://www.technocreatives.com/)]:}
+\stopdescription
+
+Starting as an Android developer, I was responsible for the architecture
+design for most Android projects. Introduced functional programming, MVI
+architecture and other design patterns to our team. During this period,
+I started to become a multi-discipline developer by working with
+different languages and products.
+
+\startitemize
+\item
+  \goto{Axkid Connect Android
+  App}[url(https://axkid.com/sv/product/axkid-connect/)]
+
+  \startitemize[packed]
+  \item
+    Work with firmware team on debugging and protocol
+  \item
+    Responsible for App architecture and BLE integration.
+  \stopitemize
+\item
+  \goto{Beckon-Android}[url(https://github.com/technocreatives/beckon-android)]
+  - A BLE library for Android.
+
+  \startitemize[packed]
+  \item
+    Design and implement the library
+  \item
+    The library was designed to be used in \goto{Axkid Connect Android
+    App}[url(https://axkid.com/sv/product/axkid-connect/)] and then
+    other teams adopted it for other BLE related projects such as
+    \goto{Weret Android
+    App}[url(https://play.google.com/store/apps/details?id=com.weret.app)].
+  \stopitemize
+\item
+  \goto{Gut}[url(https://github.com/divvun/gut)] - A Git multi repo
+  maintenance CLI tool.
+
+  \startitemize[packed]
+  \item
+    The app is being used widely in \goto{Divvun
+    organization}[url(https://divvun.no/en/index.html)]
+  \stopitemize
+\item
+  \goto{24rental}[url(https://www.24rental.se/)] - an MVP of trailer
+  rental service.
+
+  \startitemize[packed]
+  \item
+    Implement back-end using NodeJS, Typescript, PostgreSQL
+  \stopitemize
+\stopitemize
+
+\startdescription{6/2016 - 6/2018}
+  {\bf \goto{Senior Android Developer -
+  Localift}[url(https://web.archive.org/web/20170428110344/http://localift.net:80/about-us/)](Remote
+  Position)}
+\stopdescription
+
+Localift was an Australian startup which works with smart cities,
+companies and communities to deliver trusted shared mobility solutions,
+reducing congestion, economic costs and environmental impacts.
+
+\startitemize
+\item
+  The main responsible for the development Android App. App features
+  include: ride tracking, ride scheduling, mapping integration
+  (geocoding, place search, map interactions), friend lists, groups,
+  messaging, push notifications, calendar integration, Facebook
+  integration.
+\item
+  After May 2017, including the responsibility for maintaining,
+  deploying back-end (nodejs) and IOS app (Swift) after the CTO
+  resigned.
+\stopitemize
+
+\startdescription{11/2015 - 5/2016}
+  {\bf Android Developer - CommonWealth Bank Vietnam}
+\stopdescription
+
+\startitemize[packed]
+\item
+  Develop the first MVP version of a banking application for Android
+  which is \goto{TymeGlobal}[url(https://www.tyme.com/)] now.
+\stopitemize
+
+\startdescription{1/2015 - 11/2015}
+  {\bf \goto{Senior Android Developer - Evil Genius
+  Technologies}[url(https://web.archive.org/web/20150801095851/http://evilgeniustechnologies.com/)]}
+\stopdescription
+
+\startitemize[packed]
+\item
+  Develop
+  \goto{http://www.followupboss.com}[url(https://play.google.com/store/apps/details?id=com.followupboss.crm)]
+  app on Android.
+\stopitemize
+
+\startdescription{9/2013 - 12/2014}
+  {\bf \goto{Android Developer - Saritasa
+  Vietnam}[url(https://www.saritasa.vn/)]}
+\stopdescription
+
+\startitemize[packed]
+\item
+  Various Android projects
+\stopitemize
+
+\startdescription{5/2011 - 9/2013}
+  {\bf Freelancer Android Developer}
+\stopdescription
+
+\startitemize[packed]
+\item
+  Various Android projects
+\stopitemize
+
+\startdescription{11/2009 - 5/2011}
+  {\bf \goto{Mobile Developer - FPT
+  Software}[url(https://www.fpt-software.com/)]}
+\stopdescription
+
+\startitemize[packed]
+\item
+  Develop games and applications for different mobile platforms in C,
+  C++, J2ME, Android, IOS.
+\stopitemize
+
+\stopsectionlevel
+
+\startsectionlevel[title={Side Projects and Open
+Source},reference={side-projects-and-open-source}]
+
+\startdescription{Side Projects}
+  {\bf \goto{Grox}[url(https://github.com/grokking-vietnam/grox)]:}
+  Building an Interpreter in Scala 3 by using functional programming
+  techniques(Following \goto{Crafting Interpreters
+  book}[url(https://craftinginterpreters.com/)])
+
+  {\bf \goto{Compilers}[url(https://github.com/lenguyenthanh/compilers)]:}
+  A place for me to learn/experiment with interpreters/compilers, type
+  theory and functional programming.
+
+  {\bf \goto{RxArrow}[url(https://github.com/lenguyenthanh/RxArrow)]:}
+  \goto{RxJava}[url(https://github.com/ReactiveX/rxjava)] extensions for
+  \goto{Arrow}[url(https://github.com/arrow-kt/arrow/)]'s Data Types
+
+  {\bf \goto{Schack}[url(https://github.com/lenguyenthanh/schack)]:}
+  Chess logic library in Scala 3.
+\stopdescription
+
+\startdescription{Open Source}
+  {\bf \goto{Arrow}[url(https://github.com/arrow-kt/arrow/)] -
+  Functional library for Kotlin:} I am a contributor and a member of the
+  maintainer commitée.
+
+  {\bf \goto{ScalaChess}[url(https://github.com/lichess-org/scalachess)]
+  - Chess API written in Scala. Immutable and free of side effects:} I
+  rewrote
+  \goto{PGN}[url(https://en.wikipedia.org/wiki/Portable_Game_Notation)]
+  parser part of the library by using a Parser Combinators library
+  \goto{cats-parse}[url(https://github.com/typelevel/cats-parse)] which
+  improved the speed of the parsing part by 300\letterpercent{}.
+
+  {\bf \goto{Lichess}[url(https://lichess.org/)] - The second largest
+  internet chess server in the world:} Some small bug fixes, mostly
+  related to scalachess.
+\stopdescription
+
+\stopsectionlevel
+
+\startsectionlevel[title={Programming
+Languages},reference={programming-languages}]
+
+As a multi-discipline developer, I am fairly proficient in several
+programming languages. In the last few years I have been using these
+programming languages in professional or personal context(in
+alphabetical order): Elm, Haskell, Java, Javascript, Kotlin, Lua,
+Python, Rust, Scala 2, Scala 3, Swift, Typescript.
+
+\stopsectionlevel
+
+\startsectionlevel[title={Human Languages},reference={human-languages}]
+
+\startitemize[packed]
+\item
+  Vietnamese (native speaker)
+\item
+  English (Fluent)
+\stopitemize
+
+\stopsectionlevel
+
+\startsectionlevel[title={Education},reference={education}]
+
+\startdescription{2007-2011}
+  {\bf Bachelor of Software Engineering}; FPT University (Hanoi -
+  Vietnam)
+\stopdescription
+
+\stopsectionlevel
+
+\startsectionlevel[title={Academic Honors and
+Awards},reference={academic-honors-and-awards}]
+
+\startitemize[packed]
+\item
+  2009 Regional ACM/ICPC Competition at Phuket/Thailand - Encourage
+  Prize
+\item
+  2009 Vietnam National ACM/ICPC Competition - Second Prize
+\item
+  2008 Vietnam National Mathematics Olympiad for student - Third Prize
+\item
+  2007 Full Scholarship at FPT University
+\item
+  2006 Took part in the Vietnam National Mathematics Olympiad
+\stopitemize
+
+\thinrule
+
+\startblockquote
+\goto{lenguyenthanh@hotmail.com}[url(mailto:lenguyenthanh@hotmail.com)]
+• +46 73 145 4318 •\crlf
+Gothenburg, Sweden
+\stopblockquote
+
+\stopsectionlevel
+
+\stopsectionlevel
+
+\stoptext

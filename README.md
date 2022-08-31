@@ -107,3 +107,9 @@ executable, leading to errors like `Cannot find context.lua` or similar. It has 
 that running `mtxrun --generate`, ([suggested on texlive-2011-context-problem](
 https://tex.stackexchange.com/questions/53892/texlive-2011-context-problem)), can fix the
 issue.
+
+#### context log contains ```mtxrun | unknown script 'context.lua' or 'mtx-context.lua'``` or simmilar error.
+Some users have reported problems where their system does not properly find the ConTeXt
+executable, leading to these types of errors. It has been found
+that running ```mtxrun --generate```, ([suggested on texlive-2011-context-problem](
+https://tex.stackexchange.com/questions/53892/texlive-2011-context-problem)), can fix the
