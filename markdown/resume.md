@@ -22,7 +22,7 @@ Grokking Vietnam is a nonprofit organization dedicated to building and supportin
 
 * Contributor for our [newsletter](http://newsletter.grokking.org/)
 * Lead a team of five people on [Grox project](https://github.com/grokking-vietnam/grox)
-* Became a member of management team since 7/2022
+* Program Director since 7/2022
 
 4/2020 - Present
 :   **Senior Software Developer - The Techno Creatives:**
@@ -36,6 +36,9 @@ Grokking Vietnam is a nonprofit organization dedicated to building and supportin
 * [rentr.se](https://rentr.se) - A trailers rental service.
 
   - A part of a Backend team using Rust, Kotlin, GraphQL, RabbitMQ.
+
+* Integrate [Divvun Spell Checking](https://github.com/divvun/divvunspell) to [OmegaT app](https://omegat.org/).
+  - Rust, Java, Kotlin, [JNA](https://github.com/java-native-access/jna)
 
 8/2018 - 4/2020
 :   **Software Developer - The Techno Creatives:**
@@ -60,9 +63,11 @@ Starting as an Android developer, I was responsible for the architecture design 
   - Implement Backend using NodeJS, Typescript, PostgreSQL
 
 6/2016 - 6/2018
-:   **Senior Android Developer - Localift**
+:   **Senior Android Developer - Localift(remotely)**
 
-- The main responsible for the development of a ride scheduling and monitoring app for Android. App features include: ride tracking, ride scheduling, mapping integration (geocoding, place search, map interactions), friend lists, groups, messaging, push notifications, calendar integration, Facebook integration.
+Localift was an Australian startup which works with smart cities, companies and communities to deliver trusted shared mobility solutions, reducing congestion, economic costs and environmental impacts.
+
+- The main responsible for the development Android App. App features include: ride tracking, ride scheduling, mapping integration (geocoding, place search, map interactions), friend lists, groups, messaging, push notifications, calendar integration, Facebook integration.
 
 - After May 2017, including the responsibility for maintaining, deploying Backend (nodejs) and IOS app (Swift) after the CTO resigned.
 
