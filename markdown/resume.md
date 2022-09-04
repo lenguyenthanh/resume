@@ -27,9 +27,9 @@ Grokking Vietnam is a nonprofit organization dedicated to building and supportin
 4/2020 - Present
 :   **Senior Software Developer - The Techno Creatives:**
 
-* [Tyri IntelliLight](https://www.tyrilights.com/intellilight/): An app for setting up and controlling Tyri products with Bluetooth mesh in IOS and Android.
+* [Tyri IntelliLight](https://www.tyrilights.com/intellilight/): A project includes mobiles app and Backend for setting up, controlling and sharing Tyri products with Bluetooth mesh.
 
-  - Responsible for Backend using [SpringBoot](https://spring.io/projects/spring-boot), Kotlin, [Arrow](https://github.com/arrow-kt/arrow/), [r2dbc](https://r2dbc.io/), PostgreSQL, Redis.
+  - Responsible for Backend using [SpringBoot](https://spring.io/projects/spring-boot), Kotlin, [Arrow](https://github.com/arrow-kt/arrow/), [r2dbc](https://r2dbc.io/), PostgreSQL, Redis, [Test Containers](https://www.testcontainers.org/).
   - Update API and add [Bluetooth Mesh](https://en.wikipedia.org/wiki/Bluetooth_mesh_networking) module to [Beckon-Android](https://github.com/technocreatives/beckon-android) library.
   - Use [Kotlin multiplatform mobile](https://kotlinlang.org/docs/multiplatform-mobile-getting-started.html) and [SqlDelight](https://cashapp.github.io/sqldelight/) to implement the Database layer for IOS and Android Apps.
 
@@ -37,16 +37,19 @@ Grokking Vietnam is a nonprofit organization dedicated to building and supportin
 
   - A part of a Backend team using Rust, Kotlin, GraphQL, RabbitMQ.
 
-* Integrate [Divvun Spell Checking](https://github.com/divvun/divvunspell) to [OmegaT app](https://omegat.org/).
+* Implement a POC of [Divvun Spell Checking](https://github.com/divvun/divvunspell) plugin for [OmegaT app](https://omegat.org/).
   - Rust, Java, Kotlin, [JNA](https://github.com/java-native-access/jna)
+
+* A part of Android hiring team which includes: Screen candidate profiles, review assignments and technical interviews.
 
 8/2018 - 4/2020
 :   **Software Developer - The Techno Creatives:**
 
-Starting as an Android developer, I was responsible for the architecture design for most Android projects. Introduced functional programming, MVI architecture and other design patterns to our team. During this period, I started to work on other languages like Rust, Typescript and other disciplines like Backend, command line tool.
+Starting as an Android developer, I was responsible for the architecture design for most Android projects. Introduced functional programming, MVI architecture and other design patterns to our team. During this period, I started to become a multi-discipline developer by working with different languages and products.
 
 * [Axkid Connect Android App](https://axkid.com/sv/product/axkid-connect/)
 
+  - Work with firmware team on debugging and protocol
   - Responsible for App architecture and BLE integration.
 
 * [Beckon-Android](https://github.com/technocreatives/beckon-android) - A BLE library for Android.
@@ -112,6 +115,8 @@ Side Projects
 
 :   **[RxArrow](https://github.com/lenguyenthanh/RxArrow):** [RxJava](https://github.com/ReactiveX/rxjava) extensions for [Arrow](https://github.com/arrow-kt/arrow/)'s Data Types
 
+:   **[Schack](https://github.com/lenguyenthanh/schack):** Chess logic library in Scala 3.
+
 
 Open Source
 :   **[Arrow](https://github.com/arrow-kt/arrow/) - Functional library for Kotlin:**
@@ -125,8 +130,16 @@ Open Source
     Some small bug fixes, mostly related to scalachess.
 
 
-Languages
----------
+Programming Languages
+---------------------
+
+As a multi-discipline developer, I am fairly proficient in several programming languages.
+In the last few years I have been using these programming languages in professional or personal context(in alphabetical order):
+Elm, Haskell, Java, Javascript, Kotlin, Lua, Python, Rust, Scala 2, Scala 3, Swift, Typescript.
+
+
+Human Languages
+---------------
 
 * Vietnamese (native speaker)
 * English (Fluent)
@@ -147,7 +160,7 @@ Academic Honors and Awards
 * 2009 Vietnam National ACM/ICPC Competition - Second Prize
 * 2009 Regional ACM/ICPC Competition at Phuket/Thailand - Encourage Prize
 
+-------------------------
+
 > <lenguyenthanh@hotmail.com> • +46 73 145 4318 •\
 > Gothenburg, Sweden
-
-

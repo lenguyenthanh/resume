@@ -1,21 +1,32 @@
-Thanh Le
-========
+--------------------------------------------------
 
+> Thanh Le \
 > <lenguyenthanh@hotmail.com> • +46 73 145 4318 •\
 > Gothenburg, Sweden
 
+
+--------------------------------------------------
+
 Dear Hiring Manager!
 
-I am excited to be applying for the Haskell Developer at Scrive, not only because it is a Haskell Developer position, but also because I have been impressived by the convenient of Scrive's product. I am a functional programming enthusiastic, so a Haskell job is always a dream of mine.
-
-In my role at The Techno Creatives, I introduce functional programming techniques to my teams across multiple projects. I use many libraries from [Arrow](https://arrow-kt.io/) ecosystem to our Kotlin projects which includes [Beckon-Android](https://github.com/technocreatives/beckon-android) where I am the main developer. Since the last two years, I became more versatile by working on multiple disciplines and with different programming languages such as Rust, typescript, Swift. In my current project - [Tyri IntelliLight](https://www.tyrilights.com/intellilight/) - I work on backend, and make architecture decisions for Android and some part of IOS app.
-
-Beside my day works, I like to spend my time on learning about functional programming and contributing to open source softwares.
-
-My value quickly became apparent to our company, so I've been transisted to more backend, architecture position. Now I work on backend and take part of architecture decision on
-
-- Can learn thing quickly, transist and being productive for a new jobs
-- Can learn things deeply - BLE mesh
-- Like to read paper, difficult tasks
+As someone who is highly focused and attentive to detail, I thrive on building quality systems and solving difficult problems. That why I am really excited to be applying for the Software Engineer position at Recorded Future.
 
 
+In my role at The Techno Creatives, I introduce functional programming techniques as well as many other best practices to my teams across multiple projects. I was chosen to develop [Beckon-Android](https://github.com/technocreatives/beckon-android) library which is a difficult and important project for our company. Since the last two years, I have become more versatile by working on multiple disciplines and with different programming languages such as Rust, typescript, Swift. In my current project - [Tyri IntelliLight](https://www.tyrilights.com/intellilight/) - I work on Backend, and make architecture decisions for Android and some parts of IOS apps.
+
+Even though I do not use Scala in my job, but I love Scala and use it in most of my recent open source works. Which includes [Lichess.org](https://github.com/lichess-org/lila) - the second largest chess server in the world. So I believe with my experience with JVM ecosystem and my passionate with Scala, I am confident that I can learn and become productive quickly at the Recorded Future Platform team.
+
+Recorded Future team would benefit from my following attributes:
+
+- Passionate about functional programming and Scala
+- Ability to learn and adapt quickly to new projects, environments
+- Ability to work in different languages and frameworks
+
+Thank you for your time and consideration. I look forward to sharing more details of my experience and motivations with you.
+Please let me know if you need additional information or materials from me.
+
+
+Best Regards,
+
+
+Thanh Le
