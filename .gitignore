@@ -1,7 +1,6 @@
 *.log
 *.swo
 *.swp
-cl/
 result
 result-*
 .envrc

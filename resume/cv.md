@@ -123,8 +123,7 @@ Open Source
     I am a contributor and a member of the maintainer commitée.
 
 :   **[ScalaChess](https://github.com/lichess-org/scalachess) - Chess API written in Scala. Immutable and free of side effects:**
-    I rewrote [PGN](https://en.wikipedia.org/wiki/Portable_Game_Notation) parser part of the library by using a Parser Combinators library [cats-parse](https://github.com/typelevel/cats-parse)
-    which improved the speed of the parsing part by 300%.
+    I am a maintainer of this library.
 
 :   **[Lichess](https://lichess.org/) - The second largest internet chess server in the world:**
     Some small bug fixes, mostly related to scalachess.
