@@ -43,27 +43,30 @@ if not utilitydata.job.passes then utilitydata.job.passes = { } end
 
 utilitydata.job.passes.collected={
  ["itemgroup:itemize:1"]={
-  { 3, 0 },
- },
- ["itemgroup:itemize:10"]={
   { 2, 0 },
  },
+ ["itemgroup:itemize:10"]={
+  { 1, 0 },
+ },
  ["itemgroup:itemize:11"]={
+  { 2, 0 },
+ },
+ ["itemgroup:itemize:12"]={
   { 5, 0 },
  },
  ["itemgroup:itemize:2"]={
-  { 4, 0 },
-  { 1, 0 },
+  { 3, 0 },
  },
  ["itemgroup:itemize:3"]={
   { 4, 0 },
   { 1, 0 },
  },
  ["itemgroup:itemize:4"]={
-  { 2, 0 },
+  { 4, 0 },
+  { 1, 0 },
  },
  ["itemgroup:itemize:5"]={
-  { 1, 0 },
+  { 2, 0 },
  },
  ["itemgroup:itemize:6"]={
   { 1, 0 },
@@ -198,7 +201,7 @@ utilitydata.structures.counters.collected={
   { 0, 0, 0 },
  },
  ["itemgroup:itemize"]={
-  { 0, 0, 3, 4, 4, 2, 1, 1, 1, 1, 1, 2, 5 },
+  { 0, 0, 2, 3, 4, 4, 2, 1, 1, 1, 1, 1, 2, 5 },
   { 0, 3, 0, 1, 0, 1, 0, 0, 0, 2, 0, 2, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
  },
  ["itemgroup:itemize:note"]={
@@ -211,10 +214,10 @@ utilitydata.structures.counters.collected={
   { 0, 0 },
  },
  ["realpage"]={
-  { 3 },
+  { 4 },
  },
  ["subpage"]={
-  { 3 },
+  { 4 },
  },
  ["table"]={
   { 0, 0 },
@@ -223,7 +226,7 @@ utilitydata.structures.counters.collected={
   { 0 },
  },
  ["userpage"]={
-  { 3 },
+  { 4 },
  },
 }
 
@@ -270,7 +273,7 @@ utilitydata.structures.lists.collected={
    ["section"]=2,
   },
   ["titledata"]={
-   ["title"]="6/2021 - Present",
+   ["title"]="3/2023 - Present",
   },
  },
  {
@@ -282,7 +285,7 @@ utilitydata.structures.lists.collected={
    ["section"]=2,
   },
   ["titledata"]={
-   ["title"]="4/2020 - Present",
+   ["title"]="1/2023 - Present",
   },
  },
  {
@@ -294,7 +297,7 @@ utilitydata.structures.lists.collected={
    ["section"]=2,
   },
   ["titledata"]={
-   ["title"]="8/2018 - 4/2020",
+   ["title"]="6/2021 - Present",
   },
  },
  {
@@ -302,11 +305,11 @@ utilitydata.structures.lists.collected={
   ["references"]={
    ["internal"]=6,
    ["order"]=4,
-   ["realpage"]=2,
+   ["realpage"]=1,
    ["section"]=2,
   },
   ["titledata"]={
-   ["title"]="6/2016 - 6/2018",
+   ["title"]="4/2020 - 3/2023",
   },
  },
  {
@@ -314,11 +317,11 @@ utilitydata.structures.lists.collected={
   ["references"]={
    ["internal"]=7,
    ["order"]=5,
-   ["realpage"]=2,
+   ["realpage"]=1,
    ["section"]=2,
   },
   ["titledata"]={
-   ["title"]="11/2015 - 5/2016",
+   ["title"]="8/2018 - 4/2020",
   },
  },
  {
@@ -330,7 +333,7 @@ utilitydata.structures.lists.collected={
    ["section"]=2,
   },
   ["titledata"]={
-   ["title"]="1/2015 - 11/2015",
+   ["title"]="6/2016 - 6/2018",
   },
  },
  {
@@ -342,7 +345,7 @@ utilitydata.structures.lists.collected={
    ["section"]=2,
   },
   ["titledata"]={
-   ["title"]="9/2013 - 12/2014",
+   ["title"]="11/2015 - 5/2016",
   },
  },
  {
@@ -354,7 +357,7 @@ utilitydata.structures.lists.collected={
    ["section"]=2,
   },
   ["titledata"]={
-   ["title"]="5/2011 - 9/2013",
+   ["title"]="1/2015 - 11/2015",
   },
  },
  {
@@ -362,6 +365,30 @@ utilitydata.structures.lists.collected={
   ["references"]={
    ["internal"]=11,
    ["order"]=9,
+   ["realpage"]=2,
+   ["section"]=2,
+  },
+  ["titledata"]={
+   ["title"]="9/2013 - 12/2014",
+  },
+ },
+ {
+  ["metadata"]=12,
+  ["references"]={
+   ["internal"]=12,
+   ["order"]=10,
+   ["realpage"]=2,
+   ["section"]=2,
+  },
+  ["titledata"]={
+   ["title"]="5/2011 - 9/2013",
+  },
+ },
+ {
+  ["metadata"]=12,
+  ["references"]={
+   ["internal"]=13,
+   ["order"]=11,
    ["realpage"]=2,
    ["section"]=2,
   },
@@ -374,8 +401,8 @@ utilitydata.structures.lists.collected={
   ["numberdata"]=13,
   ["references"]={
    ["block"]="bodypart",
-   ["internal"]=12,
-   ["realpage"]=2,
+   ["internal"]=14,
+   ["realpage"]=3,
    ["reference"]="side-projects-and-open-source",
    ["section"]=3,
   },
@@ -387,9 +414,9 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
-   ["internal"]=13,
-   ["order"]=10,
-   ["realpage"]=2,
+   ["internal"]=15,
+   ["order"]=12,
+   ["realpage"]=3,
    ["section"]=3,
   },
   ["titledata"]={
@@ -399,8 +426,8 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
-   ["internal"]=14,
-   ["order"]=11,
+   ["internal"]=16,
+   ["order"]=13,
    ["realpage"]=3,
    ["section"]=3,
   },
@@ -413,7 +440,7 @@ utilitydata.structures.lists.collected={
   ["numberdata"]=14,
   ["references"]={
    ["block"]="bodypart",
-   ["internal"]=15,
+   ["internal"]=17,
    ["realpage"]=3,
    ["reference"]="programming-languages",
    ["section"]=4,
@@ -428,7 +455,7 @@ utilitydata.structures.lists.collected={
   ["numberdata"]=15,
   ["references"]={
    ["block"]="bodypart",
-   ["internal"]=16,
+   ["internal"]=18,
    ["realpage"]=3,
    ["reference"]="human-languages",
    ["section"]=5,
@@ -443,7 +470,7 @@ utilitydata.structures.lists.collected={
   ["numberdata"]=16,
   ["references"]={
    ["block"]="bodypart",
-   ["internal"]=17,
+   ["internal"]=19,
    ["realpage"]=3,
    ["reference"]="education",
    ["section"]=6,
@@ -456,8 +483,8 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
-   ["internal"]=18,
-   ["order"]=12,
+   ["internal"]=20,
+   ["order"]=14,
    ["realpage"]=3,
    ["section"]=6,
   },
@@ -470,7 +497,7 @@ utilitydata.structures.lists.collected={
   ["numberdata"]=17,
   ["references"]={
    ["block"]="bodypart",
-   ["internal"]=19,
+   ["internal"]=21,
    ["realpage"]=3,
    ["reference"]="academic-honors-and-awards",
    ["section"]=7,
@@ -507,6 +534,13 @@ utilitydata.structures.pages.collected={
   ["prefixdata"]=19,
   ["state"]="start",
  },
+ {
+  ["block"]="bodypart",
+  ["number"]=4,
+  ["numberdata"]=18,
+  ["prefixdata"]=19,
+  ["state"]="start",
+ },
 }
 
 if not utilitydata.structures then utilitydata.structures = { } end
@@ -521,7 +555,8 @@ if not utilitydata.structures.references then utilitydata.structures.references 
 utilitydata.structures.references.referred={
  { 1, 1 },
  { 2, 21 },
- { 3, 39 },
+ { 3, 34 },
+ { 4, 44 },
 }
 
 if not utilitydata.job then utilitydata.job = { } end

@@ -15,6 +15,9 @@ Thanh Le
 Experience
 ----------
 
+3/2023 - Present
+: **[Software Engineer - Recorded Future](https://www.recordedfuture.com/):**
+
 1/2023 - Present
 : **[Lichess](https://lichess.org):**
 
@@ -32,7 +35,7 @@ Grokking Vietnam is a nonprofit organization dedicated to building and supportin
 * Leading a team of five people on [Grox project](https://github.com/grokking-vietnam/grox)
 * Program Director since 7/2022
 
-4/2020 - Present
+4/2020 - 3/2023
 :   **[Senior Software Developer - The Techno Creatives](https://www.technocreatives.com/):**
 
 * [Tyri IntelliLight](https://www.tyrilights.com/intellilight/): A project includes mobile apps and back-end for setting up, controlling and sharing Tyri products with Bluetooth mesh.
