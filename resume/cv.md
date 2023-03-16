@@ -15,6 +15,14 @@ Thanh Le
 Experience
 ----------
 
+1/2023 - Present
+: **[Lichess](https://lichess.org):**
+
+Lichess.org is a free/libre, open-source chess server powered by volunteers and donations.
+
+* Maintainer the chess logic library: https://github.com/lichess-org/scalachess.
+* Irregular contributor for its main server: https://github.com/lichess-org/lila.
+
 6/2021 - Present
 : **[Grokking Vietnam](https://www.grokking.org/):**
 
