@@ -4,8 +4,8 @@ utilitydata.comment={
  ["escape"]="[===[ ... ]===]",
  ["file"]="cv",
  ["format"]="cont-en",
- ["stamp"]="2021.03.05 19:11",
- ["version"]=0x1.51eb851eb851fp+0,
+ ["stamp"]="2023.03.10 12:15",
+ ["version"]=0x1.547ae147ae148p+0,
 }
 
 if not utilitydata.job then utilitydata.job = { } end
@@ -19,7 +19,7 @@ if not utilitydata.job.variables then utilitydata.job.variables = { } end
 
 utilitydata.job.variables.collected={
  ["macros"]={},
- ["randomseed"]=0x1.06687d48p-2,
+ ["randomseed"]=0x1.0359ee336a218p-1,
  ["sectionblockorder"]={},
 }
 
@@ -36,6 +36,13 @@ if not utilitydata.job then utilitydata.job = { } end
 if not utilitydata.job.positions then utilitydata.job.positions = { } end
 
 utilitydata.job.positions.collected={
+ ["shared"]={
+  ["x_h_d"]={},
+  ["x_h_d_hs"]={},
+  ["x_y_w_h"]={},
+  ["y_w_h_d"]={},
+ },
+ ["user"]={},
 }
 
 if not utilitydata.job then utilitydata.job = { } end
@@ -44,6 +51,7 @@ if not utilitydata.job.passes then utilitydata.job.passes = { } end
 utilitydata.job.passes.collected={
  ["itemgroup:itemize:1"]={
   { 2, 0 },
+  { 1, 0 },
  },
  ["itemgroup:itemize:10"]={
   { 1, 0 },
@@ -202,7 +210,7 @@ utilitydata.structures.counters.collected={
  },
  ["itemgroup:itemize"]={
   { 0, 0, 2, 3, 4, 4, 2, 1, 1, 1, 1, 1, 2, 5 },
-  { 0, 3, 0, 1, 0, 1, 0, 0, 0, 2, 0, 2, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 3, 0, 1, 0, 0, 0, 0, 0, 0, 3, 0, 1, 0, 1, 0, 0, 0, 2, 0, 2, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
  },
  ["itemgroup:itemize:note"]={
   { 0, 0 },
@@ -214,10 +222,10 @@ utilitydata.structures.counters.collected={
   { 0, 0 },
  },
  ["realpage"]={
-  { 4 },
+  { 3 },
  },
  ["subpage"]={
-  { 4 },
+  { 3 },
  },
  ["table"]={
   { 0, 0 },
@@ -226,7 +234,7 @@ utilitydata.structures.counters.collected={
   { 0 },
  },
  ["userpage"]={
-  { 4 },
+  { 3 },
  },
 }
 
@@ -243,8 +251,10 @@ utilitydata.structures.lists.collected={
    ["realpage"]=1,
    ["reference"]="thanh-le",
    ["section"]=1,
+   ["view"]="fit",
   },
   ["titledata"]={
+   ["bookmark"]="Thanh Le",
    ["label"]="chapter",
    ["title"]="Thanh Le",
   },
@@ -258,8 +268,10 @@ utilitydata.structures.lists.collected={
    ["realpage"]=1,
    ["reference"]="experience",
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
+   ["bookmark"]="Experience",
    ["label"]="section",
    ["title"]="Experience",
   },
@@ -267,10 +279,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=3,
    ["order"]=1,
    ["realpage"]=1,
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="3/2023 - Present",
@@ -279,10 +293,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=4,
    ["order"]=2,
    ["realpage"]=1,
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="1/2023 - Present",
@@ -291,10 +307,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=5,
    ["order"]=3,
    ["realpage"]=1,
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="6/2021 - Present",
@@ -303,10 +321,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=6,
    ["order"]=4,
    ["realpage"]=1,
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="4/2020 - 3/2023",
@@ -315,10 +335,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=7,
    ["order"]=5,
-   ["realpage"]=1,
+   ["realpage"]=2,
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="8/2018 - 4/2020",
@@ -327,10 +349,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=8,
    ["order"]=6,
    ["realpage"]=2,
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="6/2016 - 6/2018",
@@ -339,10 +363,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=9,
    ["order"]=7,
    ["realpage"]=2,
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="11/2015 - 5/2016",
@@ -351,10 +377,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=10,
    ["order"]=8,
    ["realpage"]=2,
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="1/2015 - 11/2015",
@@ -363,10 +391,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=11,
    ["order"]=9,
    ["realpage"]=2,
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="9/2013 - 12/2014",
@@ -375,10 +405,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=12,
    ["order"]=10,
    ["realpage"]=2,
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="5/2011 - 9/2013",
@@ -387,10 +419,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=13,
    ["order"]=11,
-   ["realpage"]=2,
+   ["realpage"]=3,
    ["section"]=2,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="11/2009 - 5/2011",
@@ -405,8 +439,10 @@ utilitydata.structures.lists.collected={
    ["realpage"]=3,
    ["reference"]="side-projects-and-open-source",
    ["section"]=3,
+   ["view"]="fit",
   },
   ["titledata"]={
+   ["bookmark"]="Side Projects and Open Source",
    ["label"]="section",
    ["title"]="Side Projects and Open Source",
   },
@@ -414,10 +450,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=15,
    ["order"]=12,
    ["realpage"]=3,
    ["section"]=3,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="Side Projects",
@@ -426,10 +464,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=16,
    ["order"]=13,
    ["realpage"]=3,
    ["section"]=3,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="Open Source",
@@ -444,8 +484,10 @@ utilitydata.structures.lists.collected={
    ["realpage"]=3,
    ["reference"]="programming-languages",
    ["section"]=4,
+   ["view"]="fit",
   },
   ["titledata"]={
+   ["bookmark"]="Programming Languages",
    ["label"]="section",
    ["title"]="Programming Languages",
   },
@@ -459,8 +501,10 @@ utilitydata.structures.lists.collected={
    ["realpage"]=3,
    ["reference"]="human-languages",
    ["section"]=5,
+   ["view"]="fit",
   },
   ["titledata"]={
+   ["bookmark"]="Human Languages",
    ["label"]="section",
    ["title"]="Human Languages",
   },
@@ -474,8 +518,10 @@ utilitydata.structures.lists.collected={
    ["realpage"]=3,
    ["reference"]="education",
    ["section"]=6,
+   ["view"]="fit",
   },
   ["titledata"]={
+   ["bookmark"]="Education",
    ["label"]="section",
    ["title"]="Education",
   },
@@ -483,10 +529,12 @@ utilitydata.structures.lists.collected={
  {
   ["metadata"]=12,
   ["references"]={
+   ["block"]="bodypart",
    ["internal"]=20,
    ["order"]=14,
    ["realpage"]=3,
    ["section"]=6,
+   ["view"]="fit",
   },
   ["titledata"]={
    ["title"]="2007-2011",
@@ -501,8 +549,10 @@ utilitydata.structures.lists.collected={
    ["realpage"]=3,
    ["reference"]="academic-honors-and-awards",
    ["section"]=7,
+   ["view"]="fit",
   },
   ["titledata"]={
+   ["bookmark"]="Academic Honors and Awards",
    ["label"]="section",
    ["title"]="Academic Honors and Awards",
   },
@@ -534,13 +584,6 @@ utilitydata.structures.pages.collected={
   ["prefixdata"]=19,
   ["state"]="start",
  },
- {
-  ["block"]="bodypart",
-  ["number"]=4,
-  ["numberdata"]=18,
-  ["prefixdata"]=19,
-  ["state"]="start",
- },
 }
 
 if not utilitydata.structures then utilitydata.structures = { } end
@@ -554,9 +597,15 @@ if not utilitydata.structures.references then utilitydata.structures.references 
 
 utilitydata.structures.references.referred={
  { 1, 1 },
- { 2, 21 },
- { 3, 34 },
- { 4, 44 },
+ { 1, 6 },
+ { 2, 19 },
+ { 3, 35 },
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.parwrappers then utilitydata.job.parwrappers = { } end
+
+utilitydata.job.parwrappers.collected={
 }
 
 if not utilitydata.job then utilitydata.job = { } end
@@ -616,7 +665,7 @@ utilitydata.job.packed={
   { 0, 1, 5 },
   { 0, 1, 6 },
   {
-   ["catcodes"]=8,
+   ["catcodes"]=9,
    ["coding"]="tex",
    ["increment"]="yes",
    ["kind"]="section",
@@ -633,7 +682,7 @@ utilitydata.job.packed={
    ["set"]="all",
   },
   {
-   ["catcodes"]=8,
+   ["catcodes"]=9,
    ["coding"]="tex",
    ["increment"]="yes",
    ["kind"]="section",
@@ -650,7 +699,7 @@ utilitydata.job.packed={
    ["set"]="all",
   },
   {
-   ["catcodes"]=8,
+   ["catcodes"]=9,
    ["kind"]="construction",
    ["level"]=3,
    ["name"]="description",

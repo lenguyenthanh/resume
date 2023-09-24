@@ -18,13 +18,19 @@ Experience
 3/2023 - Present
 : **[Software Engineer - Recorded Future](https://www.recordedfuture.com/):**
 
+Provide an accessible, coherent, and scalable representation of the ever-growing Security Intelligence Graph.
+
 1/2023 - Present
 : **[Lichess](https://lichess.org):**
 
-Lichess.org is a free/libre, open-source chess server powered by volunteers and donations.
+Lichess.org is a free/libre, open-source chess server powered by volunteers and donations. I started as a contributor for [Scalachess](https://github.com/lichess-org/scalachess), and then got invited to the team and expanding my area to few different area.
 
-* Maintainer the chess logic library: https://github.com/lichess-org/scalachess.
-* Irregular contributor for its main server: https://github.com/lichess-org/lila.
+* [Scalachess](https://github.com/lichess-org/scalachess): The chess logic library of lichess
+    - Main maintainer of the library.
+    - Refactor the internal logic by using [Bitboard]() technique without changing the external Api
+    - Further bug fixes, optimization and features.
+* [lila](https://github.com/lichess-org/lila): Main server of lichess
+    - I'm a regular contributor that focus on back-end, refactoring, and performance optimization.
 
 6/2021 - Present
 : **[Grokking Vietnam](https://www.grokking.org/):**
@@ -40,12 +46,11 @@ Grokking Vietnam is a nonprofit organization dedicated to building and supportin
 
 * [Tyri IntelliLight](https://www.tyrilights.com/intellilight/): A project includes mobile apps and back-end for setting up, controlling and sharing Tyri products with Bluetooth mesh.
 
-  - Responsible for back-end using [SpringBoot](https://spring.io/projects/spring-boot), Kotlin, [Arrow](https://github.com/arrow-kt/arrow/), [r2dbc](https://r2dbc.io/), PostgreSQL, Redis, [Test Containers](https://www.testcontainers.org/).
-  - Update API and add [Bluetooth Mesh](https://en.wikipedia.org/wiki/Bluetooth_mesh_networking) module to [Beckon-Android](https://github.com/technocreatives/beckon-android) library.
+  - Responsible for the back-end using Kotlin, [Arrow](https://github.com/arrow-kt/arrow/), [r2dbc](https://r2dbc.io/), PostgreSQL, Redis.
+  - Develop [Bluetooth Mesh](https://en.wikipedia.org/wiki/Bluetooth_mesh_networking) module for [Beckon-Android](https://github.com/technocreatives/beckon-android) library.
   - Use [Kotlin multiplatform mobile](https://kotlinlang.org/docs/multiplatform-mobile-getting-started.html) and [SqlDelight](https://cashapp.github.io/sqldelight/) to implement the Database layer for IOS and Android Apps.
 
 * [rentr.se](https://rentr.se) - A trailers rental service.
-
   - A part of a back-end team using Rust, Kotlin, GraphQL, RabbitMQ.
 
 * Implement a POC of [Divvun Spell Checking](https://github.com/divvun/divvunspell) plugin for [OmegaT app](https://omegat.org/).
@@ -126,19 +131,9 @@ Side Projects
 
 :   **[RxArrow](https://github.com/lenguyenthanh/RxArrow):** [RxJava](https://github.com/ReactiveX/rxjava) extensions for [Arrow](https://github.com/arrow-kt/arrow/)'s Data Types
 
-:   **[Schack](https://github.com/lenguyenthanh/schack):** Chess logic library in Scala 3.
-
-
 Open Source
 :   **[Arrow](https://github.com/arrow-kt/arrow/) - Functional library for Kotlin:**
-    I am a contributor and a member of the maintainer commitée.
-
-:   **[ScalaChess](https://github.com/lichess-org/scalachess) - Chess API written in Scala. Immutable and free of side effects:**
-    I am a maintainer of this library.
-
-:   **[Lichess](https://lichess.org/) - The second largest internet chess server in the world:**
-    Some small bug fixes, mostly related to scalachess.
-
+    I was a contributor and a member of the maintainer commitée.
 
 Programming Languages
 ---------------------
