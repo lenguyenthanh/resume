@@ -6,8 +6,7 @@ Thanh Le
 >  Passionate, professional senior software engineer with strong
 >  architecture skills and the ability to learn quickly. Committed
 >  high quality, reusable, testable code and user experience that
->  will stand the test of time. Love functional programming and
->  open source.
+>  will stand the test of time.
 
 ----
 
@@ -18,6 +17,13 @@ Experience
 3/2023 - Present
 : **[Software Engineer - Recorded Future](https://www.recordedfuture.com/):**
 
+I work as a back-end engineer focus on maintaining a large set of data that being used to provide insights and intelligence to our customers.
+
+- Work with Scala, Akka, Kafka, ElasticSearch, PostgreSQL, Docker
+- help to design and migrate our projects from a monotholic architecture to a microservice architecture.
+- Migrate Scala 2 to Scala 3
+- Move from javaish style to purely functional programming style
+
 Provide an accessible, coherent, and scalable representation of the ever-growing Security Intelligence Graph.
 
 1/2023 - Present
@@ -25,12 +31,14 @@ Provide an accessible, coherent, and scalable representation of the ever-growing
 
 Lichess.org is a free/libre, open-source chess server powered by volunteers and donations. I started as a contributor for [Scalachess](https://github.com/lichess-org/scalachess), and then got invited to the team and expanding my area to few different area.
 
-* [Scalachess](https://github.com/lichess-org/scalachess): The chess logic library of lichess
-    - Main maintainer of the library.
-    - Refactor the internal logic by using [Bitboard]() technique without changing the external Api
-    - Further bug fixes, optimization and features.
-* [lila](https://github.com/lichess-org/lila): Main server of lichess
-    - I'm a regular contributor that focus on back-end, refactoring, and performance optimization.
+* Main maintainer of
+    - [Scalachess](https://github.com/lichess-org/scalachess): The chess logic library for lichess
+    - [lila-fishnet](https://github.com/lichess-org/lila-fishnet): Service that helps users play against computers
+    - [lila-search](https://github.com/lichess-org/lila-search): Search service with ElasticSearch
+
+* Regular contributor that focus on back-end, refactoring, and performance optimization:
+    * [lila](https://github.com/lichess-org/lila): Main server of lichess
+    * [lila-ws](https://github.com/lichess-org/lila-ws): Socket server of lichess
 
 6/2021 - Present
 : **[Grokking Vietnam](https://www.grokking.org/):**

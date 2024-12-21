@@ -7,9 +7,6 @@
   <title>cv</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -28,13 +25,16 @@
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
       }
       h1 {
         font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -58,6 +58,10 @@
       color: #1a1a1a;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -84,9 +88,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -151,8 +156,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -254,9 +262,6 @@
       width: 100%;
   }
   </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <h1 id="thanh-le">Thanh Le</h1>
@@ -265,10 +270,61 @@
 <p>Passionate, professional senior software engineer with strong
 architecture skills and the ability to learn quickly. Committed high
 quality, reusable, testable code and user experience that will stand the
-test of time. Love functional programming and open source.</p>
+test of time.</p>
 </blockquote>
 <hr />
 <h2 id="experience">Experience</h2>
+<dl>
+<dt>3/2023 - Present</dt>
+<dd>
+<strong><a href="https://www.recordedfuture.com/"
+target="_blank">Software Engineer - Recorded Future</a>:</strong>
+</dd>
+</dl>
+<p>I work as a back-end engineer focus on maintaining a large set of
+data that being used to provide insights and intelligence to our
+customers.</p>
+<ul>
+<li>Work with Scala, Akka, Kafka, ElasticSearch, PostgreSQL, Docker</li>
+<li>help to design and migrate our projects from a monotholic
+architecture to a microservice architecture.</li>
+<li>Migrate Scala 2 to Scala 3</li>
+<li>Move from javaish style to purely functional programming style</li>
+</ul>
+<p>Provide an accessible, coherent, and scalable representation of the
+ever-growing Security Intelligence Graph.</p>
+<dl>
+<dt>1/2023 - Present</dt>
+<dd>
+<strong><a href="https://lichess.org"
+target="_blank">Lichess</a>:</strong>
+</dd>
+</dl>
+<p>Lichess.org is a free/libre, open-source chess server powered by
+volunteers and donations. I started as a contributor for <a
+href="https://github.com/lichess-org/scalachess"
+target="_blank">Scalachess</a>, and then got invited to the team and
+expanding my area to few different area.</p>
+<ul>
+<li>Main maintainer of
+<ul>
+<li><a href="https://github.com/lichess-org/scalachess"
+target="_blank">Scalachess</a>: The chess logic library for lichess</li>
+<li><a href="https://github.com/lichess-org/lila-fishnet"
+target="_blank">lila-fishnet</a>: Service that helps users play against
+computers</li>
+<li><a href="https://github.com/lichess-org/lila-search"
+target="_blank">lila-search</a>: Search service with ElasticSearch</li>
+</ul></li>
+<li>Regular contributor that focus on back-end, refactoring, and
+performance optimization:
+<ul>
+<li><a href="https://github.com/lichess-org/lila"
+target="_blank">lila</a>: Main server of lichess</li>
+<li><a href="https://github.com/lichess-org/lila-ws"
+target="_blank">lila-ws</a>: Socket server of lichess</li>
+</ul></li>
+</ul>
 <dl>
 <dt>6/2021 - Present</dt>
 <dd>
@@ -288,7 +344,7 @@ project</a></li>
 <li>Program Director since 7/2022</li>
 </ul>
 <dl>
-<dt>4/2020 - Present</dt>
+<dt>4/2020 - 3/2023</dt>
 <dd>
 <strong><a href="https://www.technocreatives.com/"
 target="_blank">Senior Software Developer - The Techno
@@ -301,16 +357,13 @@ target="_blank">Tyri IntelliLight</a>: A project includes mobile apps
 and back-end for setting up, controlling and sharing Tyri products with
 Bluetooth mesh.</p>
 <ul>
-<li>Responsible for back-end using <a
-href="https://spring.io/projects/spring-boot"
-target="_blank">SpringBoot</a>, Kotlin, <a
+<li>Responsible for the back-end using Kotlin, <a
 href="https://github.com/arrow-kt/arrow/" target="_blank">Arrow</a>, <a
-href="https://r2dbc.io/" target="_blank">r2dbc</a>, PostgreSQL, Redis,
-<a href="https://www.testcontainers.org/" target="_blank">Test
-Containers</a>.</li>
-<li>Update API and add <a
+href="https://r2dbc.io/" target="_blank">r2dbc</a>, PostgreSQL,
+Redis.</li>
+<li>Develop <a
 href="https://en.wikipedia.org/wiki/Bluetooth_mesh_networking"
-target="_blank">Bluetooth Mesh</a> module to <a
+target="_blank">Bluetooth Mesh</a> module for <a
 href="https://github.com/technocreatives/beckon-android"
 target="_blank">Beckon-Android</a> library.</li>
 <li>Use <a
@@ -482,30 +535,11 @@ href="https://github.com/ReactiveX/rxjava" target="_blank">RxJava</a>
 extensions for <a href="https://github.com/arrow-kt/arrow/"
 target="_blank">Arrow</a>’s Data Types</p>
 </dd>
-<dd>
-<p><strong><a href="https://github.com/lenguyenthanh/schack"
-target="_blank">Schack</a>:</strong> Chess logic library in Scala 3.</p>
-</dd>
 <dt>Open Source</dt>
 <dd>
 <strong><a href="https://github.com/arrow-kt/arrow/"
-target="_blank">Arrow</a> - Functional library for Kotlin:</strong> I am
-a contributor and a member of the maintainer commitée.
-</dd>
-<dd>
-<p><strong><a href="https://github.com/lichess-org/scalachess"
-target="_blank">ScalaChess</a> - Chess API written in Scala. Immutable
-and free of side effects:</strong> I rewrote <a
-href="https://en.wikipedia.org/wiki/Portable_Game_Notation"
-target="_blank">PGN</a> parser part of the library by using a Parser
-Combinators library <a href="https://github.com/typelevel/cats-parse"
-target="_blank">cats-parse</a> which improved the speed of the parsing
-part by 300%.</p>
-</dd>
-<dd>
-<p><strong><a href="https://lichess.org/" target="_blank">Lichess</a> -
-The second largest internet chess server in the world:</strong> Some
-small bug fixes, mostly related to scalachess.</p>
+target="_blank">Arrow</a> - Functional library for Kotlin:</strong> I
+was a contributor and a member of the maintainer commitée.
 </dd>
 </dl>
 <h2 id="programming-languages">Programming Languages</h2>
